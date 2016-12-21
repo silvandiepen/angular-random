@@ -9,12 +9,15 @@
   angular.module('random', [])
      .service('random', [function () {
     function random(min, max){
+      if(isArray(min)){
+        return min[random(0,min.length)];
+      } else {
         min = min === null? MIN_INT : min;
         max = max === null? MAX_INT : max;
         var number = min + (max - min) * Math.random();
-        return Math.round(number);
+        return Math.ceil(number);
+      }
     }
     return random;
-
 	}]);
 })(window, window.angular);
