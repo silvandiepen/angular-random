@@ -1,0 +1,23 @@
+{
+  "name": "angular-random",
+  "main": "angular-random.js",
+  "homepage": "https://github.com/silvandiepen/angular-random",
+  "authors": [
+    "silvandiepen <me@silvandiepen.com>"
+  ],
+  "description": "Just use min and max in a random function",
+  "keywords": [
+    "random",
+    "math",
+    "function",
+    "angular"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
