@@ -12,7 +12,7 @@
         min = min === null? MIN_INT : min;
         max = max === null? MAX_INT : max;
         var number = min + (max - min) * Math.random();
-        return Math.ceil(number);
+        return Math.round(number);
     }
     return random;
 
