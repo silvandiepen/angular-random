@@ -8,11 +8,11 @@
 (function(window, angular, undefined) {
   angular.module('random', [])
      .service('random', [function () {
-
     function random(min, max){
         min = min === null? MIN_INT : min;
         max = max === null? MAX_INT : max;
-        return min + (max - min) * Math.rand();
+        var number = min + (max - min) * Math.random();
+        return Math.ceil(number);
     }
     return random;
 
