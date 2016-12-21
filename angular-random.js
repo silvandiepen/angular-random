@@ -6,18 +6,15 @@
 */
 
 (function(window, angular, undefined) {
-	angular.module('random')
-	.service('random', [function() {
-    'use strict';
+  angular.module('random', [])
+     .service('random', [function () {
 
-    var self = this;
-
-    self.Random = function Random(min, max){
+    function random(min, max){
         min = min === null? MIN_INT : min;
         max = max === null? MAX_INT : max;
         return min + (max - min) * Math.rand();
-    };
-    return self.Random;
+    }
+    return random;
 
 	}]);
 })(window, window.angular);
